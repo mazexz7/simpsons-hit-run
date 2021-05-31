@@ -1,11 +1,11 @@
   function M_Game.Talk(ICON, TEXT)
-		M_M_Game.StartCountdown('count')
-		M_M_Game.AddToCountdownSequence('', 4000)
-		M_M_Game.SetHUDIcon(ICON)
-		M_M_Game.SetStageMessageIndex(TEXT)
-		M_M_Game.AddObjective('timer')
-			M_M_Game.SetDurationTime(3)
-		M_M_Game.CloseObjective()
+		M_Game.StartCountdown('count')
+		M_Game.AddToCountdownSequence('', 4000)
+		M_Game.SetHUDIcon(ICON)
+		M_Game.SetStageMessageIndex(TEXT)
+		M_Game.AddObjective('timer')
+			M_Game.SetDurationTime(3)
+		M_Game.CloseObjective()
   end
 	
 	function M_Game.TalkNPC(ICON, TEXT, NPC, LOCATOR)
