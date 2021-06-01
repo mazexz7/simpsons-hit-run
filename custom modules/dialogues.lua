@@ -13,7 +13,7 @@ dialogues = {}
   --]]
 	dialogues['homer'] = 3 -- Number of allowed "dialogues" for character. Number must not be more than files for the character, only less or equal.
   dialogues['bart'] = 2
-	function dialogues.speak(name, meet)
+	function dialogues.speak(name)
 		if dialogues[name] then
 			local number = math.random(1, dialogues[name])
 			Game.SetCompletionDialog(name..number, name)
